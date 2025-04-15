@@ -1,0 +1,8 @@
+<div class="wrapper">
+    <div class="control">
+        <input type="text" [(ngModel)]="test" (ngModelChange)="onInputChange()" />
+    </div>
+    <div class="list" *ngIf="search">
+        <a *ngFor="let item of mockList">{{item.name}}</a>
+    </div>
+</div>

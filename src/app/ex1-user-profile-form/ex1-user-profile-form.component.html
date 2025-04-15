@@ -1,0 +1,16 @@
+<div>
+    <h3>ex1-user-profile-form</h3>
+</div>
+<div class="item-list">
+    <input id="name" name="name" type="text" class="item-field" [(ngModel)]="user.name">
+    <input id="email" name="email" type="email" class="item-field" [(ngModel)]="user.email">
+    <input id="age" name="age" type="number" class="item-field" [(ngModel)]="user.age">
+</div>
+<div class="btn">
+    <button (click)="resetForm()">reset</button>
+</div>
+<div class="item-list">
+    <label class="item-field-display">{{user.name}}</label>
+    <label class="item-field-display">{{user.email}}</label>
+    <label class="item-field-display">{{user.age}}</label>
+</div>

@@ -1,0 +1,19 @@
+.item-list {
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
+}
+
+.item-field {
+    margin: 10px;
+}
+
+.item-field-display {
+    margin: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: left;
+    margin: 10px;
+}

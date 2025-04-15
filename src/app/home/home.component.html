@@ -1,0 +1,5 @@
+<div class="button-container">
+    <button *ngFor="let btn of buttons" (click)="handleClick(btn.path)" [class]="'btn-' + btn.color">
+        {{ btn.text }}
+    </button>
+</div>
