@@ -1,8 +1,16 @@
+<div>
+    <h3>ex2 - Auto Complete input</h3>
+</div>
 <div class="wrapper">
     <div class="control">
+        <p>Digite uma fruta (Primeira Letra Maiuscula)</p>
         <input type="text" [(ngModel)]="test" (ngModelChange)="onInputChange()" />
     </div>
     <div class="list" *ngIf="search">
-        <a *ngFor="let item of mockList">{{item.name}}</a>
+        <a *ngFor="let item of filterList">{{item.name}}</a>
+    </div>
+    <div class="notes">
+        <p>notas: dificil fazer isso sem alguma library, consegui fazer o input filtrar da lista ainda
+            assim, eu acredito que poderia fazer para não ser case sensisive.</p>
     </div>
 </div>

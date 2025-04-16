@@ -1,3 +1,8 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
 body {
     margin: 0px;
 }
@@ -28,4 +33,12 @@ body {
 .topnav a.active {
     background-color: #1976d2;
     color: white;
+}
+
+.notes {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
 }
